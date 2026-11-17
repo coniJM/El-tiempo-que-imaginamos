@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El tiempo que imaginamos</title>
+ <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="hero screen screen--active" id="top">
+
+    <div class="flower">
+      <div class="petal petal-1"></div>
+      <div class="petal petal-2"></div>
+      <div class="petal petal-3"></div>
+      <div class="petal petal-4"></div>
+      <div class="petal petal-5"></div>
+      <div class="petal petal-6"></div>
+      <div class="flower-center"></div>
+      <div class="glow"></div>
+    </div>
+
+    <header class="topbar">
+      <span>EXPERIENCIA INTERACTIVA</span>
+      <span>01 — 04</span>
+    </header>
+
+    <section class="content">
+      <p class="eyebrow">UNA EXPLORACIÓN SOBRE EL TIEMPO</p>
+
+      <h1>El tiempo que<br><em>imaginamos</em></h1>
+
+      <p class="description">
+        Una exploración sobre el tiempo, nuestras expectativas
+        y las experiencias que transforman nuestra manera
+        de imaginar el futuro.
+      </p>
+
+      <a href="#introduccion" class="enter" data-step-next>
+        Acercarse a la experiencia <span>↗</span>
+      </a>
+    </section>
+
+    <footer>
+      <span>Una pausa para pensar en el tiempo.</span>
+      <span>ACÉRCATE PARA COMENZAR ↘</span>
+    </footer>
+
+  </main>
+
+  <section class="introduction screen" id="introduccion">
+    <p>ANTES DE COMENZAR</p>
+    <h2>El tiempo no siempre se siente igual.</h2>
+    <p>
+      Imaginamos el futuro a partir de experiencias, deseos y
+      momentos que esperamos vivir. Construimos una idea de
+      cómo continuará nuestra historia.
+    </p>
+    <p>
+      Pero algunas experiencias pueden cambiar esa manera
+      de mirar el tiempo. Lo que esperábamos, lo que vivimos
+      y lo que imaginamos comienza a adquirir otros significados.
+    </p>
+    <a href="#pregunta-futuro" class="enter" data-step-next>Comenzar <span>↗</span></a>
+  </section>
+
+
+  <section class="question screen" id="pregunta-futuro" aria-labelledby="pregunta-titulo">
+    <div class="question-inner">
+      <p class="question-kicker">01 — TU MANERA DE IMAGINAR</p>
+      <h2 id="pregunta-titulo">¿Cómo imaginas el futuro cuando piensas en tu vida?</h2>
+      <p class="question-hint">Elige la opción que más se acerque a lo que sientes.</p>
+
+      <form id="future-form">
+        <fieldset class="answer-list">
+          <legend class="visually-hidden">Selecciona una respuesta</legend>
+          <label class="answer-option">
+            <input type="radio" name="future" value="Como una sucesión de etapas y momentos.">
+            <span class="answer-marker" aria-hidden="true"></span>
+            <span>Como una sucesión de etapas y momentos.</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="future" value="Como algo que se construye día a día.">
+            <span class="answer-marker" aria-hidden="true"></span>
+            <span>Como algo que se construye día a día.</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="future" value="Como un conjunto de experiencias que espero vivir.">
+            <span class="answer-marker" aria-hidden="true"></span>
+            <span>Como un conjunto de experiencias que espero vivir.</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="future" value="Como algo incierto que no puedo anticipar.">
+            <span class="answer-marker" aria-hidden="true"></span>
+            <span>Como algo incierto que no puedo anticipar.</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="future" value="Nunca me había detenido a pensarlo.">
+            <span class="answer-marker" aria-hidden="true"></span>
+            <span>Nunca me había detenido a pensarlo.</span>
+          </label>
+        </fieldset>
+        <div class="question-actions">
+          <button class="continue-button" id="continue-button" type="submit" disabled>Continuar <span aria-hidden="true">↗</span></button>
+          <p class="answer-status" id="answer-status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="question question--change screen" id="pregunta-cambio" aria-labelledby="pregunta-cambio-titulo">
+    <div class="time-fragments" aria-hidden="true">
+      <span class="fragment fragment--one"></span>
+      <span class="fragment fragment--two"></span>
+      <span class="fragment fragment--three"></span>
+      <span class="fragment-line fragment-line--one"></span>
+      <span class="fragment-line fragment-line--two"></span>
+    </div>
+    <div class="question-inner">
+      <p class="question-kicker">02 — CUANDO EL TIEMPO CAMBIA</p>
+      <h2 id="pregunta-cambio-titulo">¿Alguna experiencia ha cambiado tu manera de percibir el tiempo?</h2>
+      <p class="question-hint">Puedes pensar en cómo entiendes el pasado, el presente o el futuro.</p>
+
+      <form id="change-form">
+        <fieldset class="answer-list">
+          <legend class="visually-hidden">Selecciona una respuesta</legend>
+          <label class="answer-option">
+            <input type="radio" name="time-change" value="El pasado comenzó a tener otro significado.">
+            <span class="answer-marker" aria-hidden="true"></span>
+            <span>El pasado comenzó a tener otro significado.</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="time-change" value="El presente adquirió mayor importancia.">
+            <span class="answer-marker" aria-hidden="true"></span>
+            <span>El presente adquirió mayor importancia.</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="time-change" value="El futuro dejó de parecerme tan predecible.">
+            <span class="answer-marker" aria-hidden="true"></span>
+            <span>El futuro dejó de parecerme tan predecible.</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="time-change" value="Comencé a cuestionar el orden en que suceden las cosas.">
+            <span class="answer-marker" aria-hidden="true"></span>
+            <span>Comencé a cuestionar el orden en que suceden las cosas.</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="time-change" value="No he notado un cambio.">
+            <span class="answer-marker" aria-hidden="true"></span>
+            <span>No he notado un cambio.</span>
+          </label>
+        </fieldset>
+        <div class="question-actions">
+          <button class="continue-button" id="change-button" type="submit" disabled>Continuar <span aria-hidden="true">↗</span></button>
+          <p class="answer-status" id="change-status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="question question--remain screen" id="pregunta-permanece" aria-labelledby="pregunta-permanece-titulo">
+    <div class="time-remains" aria-hidden="true">
+      <span class="remain-orb remain-orb--one"></span>
+      <span class="remain-orb remain-orb--two"></span>
+      <span class="remain-orb remain-orb--three"></span>
+      <span class="remain-line remain-line--one"></span>
+      <span class="remain-line remain-line--two"></span>
+    </div>
+    <div class="question-inner">
+      <p class="question-kicker">03 — LO QUE PERMANECE</p>
+      <h2 id="pregunta-permanece-titulo">¿Qué significa para ti el tiempo que todavía queda por vivir?</h2>
+      <p class="question-hint">Escribe una palabra o una breve reflexión sobre el tiempo que todavía queda por vivir.</p>
+
+      <form id="remain-form">
+        <label class="visually-hidden" for="remain-answer">Escribe una palabra o una reflexión</label>
+        <textarea class="reflection-input" id="remain-answer" name="reflection" rows="4" maxlength="700" placeholder="Escribe lo que te gustaría dejar aquí…"></textarea>
+        <div class="question-actions">
+          <button class="continue-button" id="finish-button" type="submit">Cerrar la experiencia <span aria-hidden="true">↗</span></button>
+          <p class="answer-status" id="remain-status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="closing screen" id="cierre" aria-labelledby="closing-title">
+    <p class="question-kicker">GRACIAS POR TOMARTE ESTE TIEMPO</p>
+    <h2 id="closing-title">Hay futuros que no sucedieron,<br><em>pero que también forman parte de nuestra historia.</em></h2>
+    <p>Quizás el tiempo no sea solamente aquello que transcurre, sino también todo lo que imaginamos que podría suceder.</p>
+    <a href="#top" class="enter" data-restart>Volver al comienzo <span>↗</span></a>
+  </section>
+
+  <script src="js/app.js" defer></script>
+
+</body>
+</html>
